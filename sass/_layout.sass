@@ -1,0 +1,274 @@
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+.container
+	font-family: $main-font
+	margin: 20px auto
+	max-width: 1200px
+
+body
+	font-family: $main-font
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default
+	background-color: $third-color
+	border: none
+
+	.navbar-brand
+		img
+			height: 80px
+			background-color: $third-color
+			+b-ra(10px)
+			padding: 10px
+
+	.navbar-toggle
+		border: none
+		background-color: $main-color
+		color: #fff
+		&:hover,
+		&:active,
+		&:focus
+			background-color: $main-color !important
+
+	.navbar-nav
+		margin-top: 30px
+		> li
+			> a
+				font-family: $main-font
+				color: $second-color
+				text-transform: uppercase
+				&:hover,
+				&:active,
+				&:focus
+					color: $main-color !important
+		> .active
+			> a
+				color: $main-color
+				background-color: transparent !important
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner
+	background: url(../img/banner/05.jpg) center center/cover
+
+video
+	display: none
+
+.intro-text
+	padding: 100px 0 50px
+
+.btn
+	border: none
+	color: white
+	background-color: $main-color
+	font-family: $main-font
+	&:hover,
+	&:active,
+	&:focus
+		color: $main-color !important
+
+.dropdown-menu
+	> li
+		> a
+			font-family: $main-font
+			&:hover,
+			&:active,
+			&:focus
+				color: $main-color !important
+
+/************************************/
+/*=========     ABOUT     =========*/
+/**********************************/
+
+/***************************************/
+/*=========     SERVICES     =========*/
+/*************************************/
+#servicios
+	.img-services
+		display: inline-block
+		height: 50px
+
+	.fa
+		margin-top: 50px
+		width: 100px
+		height: 100px
+		background-color: $main-color
+		+b-ra(10%)
+		line-height: 100px
+		color: #fff !important
+		font-size: 50px !important
+		+b-sh(0,0,10px,grey)
+
+/****************************************/
+/*=========     PORTFOLIO     =========*/
+/**************************************/
+.img-portfolio
+	+b-ra(10%)
+	+b-sh(0px, 0px, 10px, $main-color)
+	border: solid 2px $main-color
+	overflow: hidden	
+
+.portfolio-item
+	margin: 20px auto 40px
+	max-width: 400px
+
+	figure
+		position: relative
+		div
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(255,90,0,0.8)
+			opacity: 0
+			+ttion(0.4s)
+			+b-ra(10%)
+			span
+				position: absolute
+				left: 50%
+				top: 50%
+				color: $third-color
+				font-size: 50px
+				transform: translate(-50%,-50%) scale(0)
+				+ttion(300ms)
+		&:hover
+			div
+				opacity: 1
+				span
+					transform: translate(-50%,-50%) scale(1)
+	
+/***********************************/
+/*=========     TEAM     =========*/
+/*********************************/
+.team-img
+	border: solid 2px $main-color
+	+b-sh(0px, 0px, 10px, $main-color)
+	+b-ra(50%)
+	overflow: hidden
+	width: 225px
+	height: 225px
+	margin: 20px auto
+
+.icons
+	padding-bottom: 20px
+	i							
+		+b-ra(50%)
+		overflow: hidden
+		background-color: $main-color
+		color: white
+		font-size: 14px		
+		padding: 8px
+		margin: 0 8px
+		overflow: hidden
+		text-align: center	
+
+/**************************************/
+/*=========     CONTACT     =========*/
+/************************************/
+#contacto	
+	input,textarea,button
+		width: 95%	
+		border: solid 1px $main-color
+		+b-sh(0px, 0px, 5px, $main-color)
+		+b-ra(5px)
+		display: block
+		height: 50px		
+		padding: 10px	
+		margin: 20px auto 0	
+		font-style: inherit
+	button
+		border: none		
+		background-color: $main-color
+		color: white
+		width: 40%
+		margin: auto
+	textarea
+		height: 150px
+	form
+		p
+			padding: 20px
+	
+.map
+	position: relative
+	width: 95%	
+	height: 360px
+	padding: 0
+	margin: 20px auto
+
+	// la etiqueta iframe nos permite insertar contenido externo, por ejemplo, en este caso un mapa de google
+	iframe
+		border: solid 1px $main-color
+		+b-sh(0px, 0px, 5px, $main-color)
+		+b-ra(5px)
+		width: 100%	
+		height: 100%
+		overflow: hidden
+		line-height: 0
+		position: absolute
+		right: 0
+		top: 0
+		float: left
+		text-align: center
+
+	// este div está sobre el iframe y cumple la función de evitar el "zoom-in" y "zoom-out" del google map
+	div
+		position: absolute
+		right: 0
+		top: 0
+		width: 100%
+		height: 100%
+
+/************************************/
+/*=========     FOOTER     =========*/
+/************************************/
+#footer
+	height: 100%
+	padding: 0px
+	background-color: $third-color
+	p
+		padding-top: 10px
+		color: $main-color	
+
+	.container
+		position: relative
+
+	.img-services
+		display: inline-block
+		height: 50px
+
+	.logo
+		margin-top: 40px
+		position: absolute
+		left: 0
+		top: 0
+		float: left
+
+	.icons
+		margin-top: 20px
+		color: $second-color
+
+/************************************/
+/*=========     MODAL      =========*/
+/************************************/
+.modal
+	.modal-body
+		max-width: 50vw		/*MB El ancho será el 100% del viewport*/
+		max-height: 85vh	/*MB El alto será el 100% del viewport*/
+		img
+			margin: 0 auto
+			+b-ra(10%)
+			+b-sh(0,0,10px,black)
+
+		.text-info
+			color: black
+
+		.btn
+			width: 80px
+			height: 50px
+			background-color: $main-color
+		&:hover
+			color: black

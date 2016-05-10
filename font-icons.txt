@@ -1,0 +1,26 @@
+
+-----------------------------------------------------------------
+Delivery
+<i class="fa fa-truck" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Catering
+<i class="fa fa-cutlery" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Eventos
+<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Promociones
+<i class="fa fa-gift" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Mapas
+<i class="fa fa-map" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Linkedin
+<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Facebook
+<i class="fa fa-facebook-square" aria-hidden="true"></i>
+-----------------------------------------------------------------
+Twitter
+<i class="fa fa-twitter-square" aria-hidden="true"></i>
+-----------------------------------------------------------------
