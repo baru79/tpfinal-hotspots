@@ -35,13 +35,12 @@ li {
 .container {
   font-family: "Montserrat";
   margin: 20px auto;
-  max-width: 1200px; }
+  max-width: 1440px; }
 
 .container2 {
   font-family: "Montserrat";
-  margin: 20px auto;
-  max-width: 1200px;
-  padding: 120px 0 0; }
+  max-width: 1440px;
+  padding: 120px 20px 0; }
 
 body {
   font-family: "Montserrat"; }
@@ -53,8 +52,8 @@ body {
   background-color: #B0B0B0;
   border: none; }
   .navbar-default .navbar-brand img {
-    height: 80px;
-    background-color: #B0B0B0;
+    margin-top: -20px;
+    height: 60px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     padding: 10px; }
@@ -142,7 +141,6 @@ video {
   overflow: hidden; }
 
 .portfolio-item {
-  margin: 20px auto 40px;
   max-width: 400px; }
   .portfolio-item figure {
     position: relative; }
@@ -184,6 +182,7 @@ video {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
+  line-heigth: 0;
   width: 225px;
   height: 225px;
   margin: 20px auto; }
@@ -241,6 +240,7 @@ video {
   box-shadow: 0px 0px 5px #FF5A00;
   -webkit-box-shadow: 0px 0px 5px #FF5A00; }
   .map iframe {
+    line-height: 0;
     border: none;
     width: 100%;
     height: 100%;
@@ -299,7 +299,27 @@ video {
 /***************************************** */
 /*=========     MEDIA-QUERIES    ========= */
 /***************************************** */
+@media (max-width: 375px) {
+  .portfolio-item {
+    width: 50%;
+    margin: auto; } }
 @media (min-width: 768px) {
+  .navbar-default .navbar-header {
+    position: relative; }
+  .navbar-default .navbar-brand {
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 0; }
+    .navbar-default .navbar-brand img {
+      margin-top: 25px;
+      margin-left: -20px;
+      height: 70px; }
+  .navbar-default .navbar-nav {
+    margin-top: 0;
+    font-size: 12px; }
+
   .intro-text {
     padding: 200px 0 50px; }
 
@@ -313,11 +333,19 @@ video {
   #banner p {
     padding-top: 140px;
     font-size: 40px; } }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  .navbar-default .navbar-nav {
+    font-size: 18px; }
+
   .intro-text {
     padding: 400px 0 50px; }
 
   #banner h2 {
     font-size: 50px; } }
+@media (min-width: 1440px) {
+  .navbar-default .navbar-brand img {
+    margin-left: -150px; }
+  .navbar-default .navbar-nav {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=styles.css.map */

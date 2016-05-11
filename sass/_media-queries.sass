@@ -1,8 +1,31 @@
 /******************************************/
 /*=========     MEDIA-QUERIES    =========*/
 /******************************************/
+@media (max-width: 375px)
+	// version Mobile M
+	.portfolio-item
+		width: 50%
+		margin: auto
+
 @media (min-width: 768px)
-	// version SM
+	// version Tablet
+	.navbar-default
+		.navbar-header
+			position: relative
+		.navbar-brand
+			float: left
+			position: absolute
+			left: 0
+			bottom: 0
+			margin-left: 0
+			img
+				margin-top: 25px
+				margin-left: -20px
+				height: 70px
+		.navbar-nav
+			margin-top: 0
+			font-size: 12px
+					
 	.intro-text
 		padding: 200px 0 50px
 
@@ -18,12 +41,24 @@
 			padding-top: 140px
 			font-size: 40px
 
-@media (min-width: 992px)
-	// version MD
-	
+@media (min-width: 1024px)
+	// version Laptop
+	.navbar-default
+		.navbar-nav
+			font-size: 18px
+
 	.intro-text
 		padding: 400px 0 50px
 	
 	#banner
 		h2
 			font-size: 50px
+
+@media (min-width: 1440px)
+	// version Laptop L
+	.navbar-default
+		.navbar-brand
+			img
+				margin-left: -150px
+		.navbar-nav
+			font-size: 24px
