@@ -5,6 +5,12 @@
 	font-family: $main-font
 	margin: 20px auto
 	max-width: 1200px
+	
+.container2
+	font-family: $main-font
+	margin: 20px auto
+	max-width: 1200px
+	padding: 120px 0 0
 
 body
 	font-family: $main-font
@@ -22,7 +28,7 @@ body
 			background-color: $third-color
 			+b-ra(10px)
 			padding: 10px
-
+		
 	.navbar-toggle
 		border: none
 		background-color: $main-color
@@ -53,7 +59,13 @@ body
 /***********************************/
 #banner
 	background: url(../img/banner/05.jpg) center center/cover
-
+	h2
+		padding-top: 140px
+		color: white
+		font-family: $main-font
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
 video
 	display: none
 
@@ -114,7 +126,6 @@ video
 .portfolio-item
 	margin: 20px auto 40px
 	max-width: 400px
-
 	figure
 		position: relative
 		div
@@ -169,14 +180,15 @@ video
 /**************************************/
 /*=========     CONTACT     =========*/
 /************************************/
-#contacto	
+#contacto
+	input
+		height: 50px
 	input,textarea,button
 		width: 95%	
 		border: solid 1px $main-color
 		+b-sh(0px, 0px, 5px, $main-color)
 		+b-ra(5px)
 		display: block
-		height: 50px		
 		padding: 10px	
 		margin: 20px auto 0	
 		font-style: inherit
@@ -186,6 +198,7 @@ video
 		color: white
 		width: 40%
 		margin: auto
+		padding: 20px
 	textarea
 		height: 150px
 	form
@@ -198,16 +211,14 @@ video
 	height: 360px
 	padding: 0
 	margin: 20px auto
-
+	overflow: hidden
+	border: solid 2px $main-color
+	+b-sh(0px, 0px, 5px, $main-color)
 	// la etiqueta iframe nos permite insertar contenido externo, por ejemplo, en este caso un mapa de google
 	iframe
-		border: solid 1px $main-color
-		+b-sh(0px, 0px, 5px, $main-color)
-		+b-ra(5px)
+		border: none
 		width: 100%	
 		height: 100%
-		overflow: hidden
-		line-height: 0
 		position: absolute
 		right: 0
 		top: 0
@@ -233,19 +244,12 @@ video
 		padding-top: 10px
 		color: $main-color	
 
-	.container
-		position: relative
-
 	.img-services
 		display: inline-block
 		height: 50px
 
 	.logo
-		margin-top: 40px
-		position: absolute
-		left: 0
-		top: 0
-		float: left
+		transform: scale(0.6)
 
 	.icons
 		margin-top: 20px
@@ -256,8 +260,8 @@ video
 /************************************/
 .modal
 	.modal-body
-		max-width: 50vw		/*MB El ancho será el 100% del viewport*/
-		max-height: 85vh	/*MB El alto será el 100% del viewport*/
+		max-width: 50vw		
+		max-height: 85vh	
 		img
 			margin: 0 auto
 			+b-ra(10%)
